@@ -125,3 +125,9 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 
 
 解决方案：httpasyncclient包需要拷贝到flume
+
+5. java.lang.NoSuchMethodError: io.netty.util.internal.ObjectUtil.checkPositive(ILjava/lang/String;)
+
+causion：netty-common包版本低或者版本冲突
+
+解决：使用netty-common-4.1.32.Final.jar
